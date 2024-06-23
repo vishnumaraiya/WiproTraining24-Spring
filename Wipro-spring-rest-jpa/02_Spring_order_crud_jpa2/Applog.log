@@ -1,0 +1,567 @@
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:17:50,704-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:17:50,712-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-06-20 02:17:50,769-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-06-20 02:17:50,769-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:17:51,600-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:17:51,653-Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:17:52,262-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:17:52,271-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:17:52,272-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-06-20 02:17:52,321-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:17:52,322-Root WebApplicationContext: initialization completed in 1553 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:17:52,451-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.Version-[INFO]- 2024-06-20 02:17:52,492-HHH000412: Hibernate ORM core version 6.5.2.Final-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:17:52,517-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:17:52,712-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:17:52,731-HikariPool-1 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:17:53,091-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25ad9abe-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:17:53,094-HikariPool-1 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:17:53,844-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:17:53,999-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:17:54,305-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:17:55,322-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:17:55,355-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:17:55,374-Started DemoApplication in 5.154 seconds (process running for 6.092)-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:22:22,667-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:22:22,749-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:22:22,773-HikariPool-1 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:22:22,805-HikariPool-1 - Shutdown completed.-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:22:23,034-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:22:23,035-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:22:23,330-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:22:23,342-Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:22:23,516-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:22:23,521-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:22:23,522-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-06-20 02:22:23,535-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:22:23,535-Root WebApplicationContext: initialization completed in 493 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:22:23,575-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:22:23,578-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:22:23,599-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:22:23,600-HikariPool-2 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:22:23,664-HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34936d84-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:22:23,665-HikariPool-2 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:22:23,731-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:22:23,778-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:22:23,883-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:22:24,254-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:22:24,268-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:22:24,275-Started DemoApplication in 1.314 seconds (process running for 274.999)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-06-20 02:22:24,281-Condition evaluation unchanged-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-06-20 02:22:45,481-Initializing Spring DispatcherServlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:22:45,482-Initializing Servlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:22:45,494-Completed initialization in 12 ms-
+org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-[WARN]- 2024-06-20 02:22:45,627-Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/hello.]-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:23:41,445-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:23:41,475-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:23:41,481-HikariPool-2 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:23:41,495-HikariPool-2 - Shutdown completed.-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:23:41,689-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:23:41,690-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:23:41,901-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:23:41,912-Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:23:42,021-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:23:42,023-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:23:42,023-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-06-20 02:23:42,034-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:23:42,035-Root WebApplicationContext: initialization completed in 338 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:23:42,068-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:23:42,071-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:23:42,342-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:23:42,344-HikariPool-3 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:23:42,380-HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@127db177-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:23:42,380-HikariPool-3 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:23:42,438-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:23:42,459-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-06-20 02:23:42,482-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:23:42,483-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:23:42,483-HikariPool-3 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:23:42,485-HikariPool-3 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:23:42,486-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-06-20 02:23:42,499-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-06-20 02:23:42,516-Application run failed-
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Duplicate method hello() in type OrderController
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method hello() in type OrderController
+
+	at com.example.demo.controller.OrderController.<init>(OrderController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 24 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:24:17,366-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:24:17,366-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:24:17,529-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:24:17,539-Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:24:17,630-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:24:17,634-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:24:17,634-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]-[INFO]- 2024-06-20 02:24:17,644-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:24:17,644-Root WebApplicationContext: initialization completed in 273 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:24:17,677-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:24:17,682-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:24:17,690-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:17,691-HikariPool-4 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:24:17,719-HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f276a57-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:17,722-HikariPool-4 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:24:17,789-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:24:17,803-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-06-20 02:24:17,808-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:24:17,808-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:17,809-HikariPool-4 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:17,811-HikariPool-4 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:24:17,811-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-06-20 02:24:17,817-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-06-20 02:24:17,822-Application run failed-
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Duplicate method hello() in type OrderController
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method hello() in type OrderController
+
+	at com.example.demo.controller.OrderController.<init>(OrderController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 24 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:24:40,553-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:24:40,554-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:24:40,683-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:24:40,689-Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:24:40,763-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:24:40,764-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:24:40,764-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/]-[INFO]- 2024-06-20 02:24:40,772-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:24:40,772-Root WebApplicationContext: initialization completed in 215 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:24:40,798-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:24:40,801-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:24:40,808-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:40,810-HikariPool-5 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:24:40,834-HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34311fa3-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:40,835-HikariPool-5 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:24:40,875-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:24:40,891-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-06-20 02:24:40,896-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:24:40,896-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:40,896-HikariPool-5 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:40,898-HikariPool-5 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:24:40,903-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-06-20 02:24:40,910-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-06-20 02:24:40,918-Application run failed-
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Duplicate method hello() in type OrderController
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method hello() in type OrderController
+
+	at com.example.demo.controller.OrderController.<init>(OrderController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 24 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:24:52,518-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:24:52,519-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:24:52,653-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:24:52,661-Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:24:52,739-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:24:52,742-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:24:52,742-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]-[INFO]- 2024-06-20 02:24:52,750-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:24:52,750-Root WebApplicationContext: initialization completed in 230 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:24:52,772-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:24:52,775-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:24:52,785-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:52,786-HikariPool-6 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:24:52,824-HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52c95f85-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:52,825-HikariPool-6 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:24:52,869-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:24:52,885-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-06-20 02:24:52,891-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:24:52,891-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:52,892-HikariPool-6 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:24:52,894-HikariPool-6 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:24:52,895-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-06-20 02:24:52,901-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-06-20 02:24:52,903-Application run failed-
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Duplicate method hello() in type OrderController
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method hello() in type OrderController
+
+	at com.example.demo.controller.OrderController.<init>(OrderController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 24 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:17,612-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:17,613-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:17,740-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:17,747-Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:25:17,804-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:25:17,805-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:25:17,805-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]-[INFO]- 2024-06-20 02:25:17,813-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:25:17,813-Root WebApplicationContext: initialization completed in 196 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:25:17,851-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:25:17,853-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:25:17,862-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:17,863-HikariPool-7 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:25:17,884-HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@131a9c21-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:17,886-HikariPool-7 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:25:17,928-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:25:17,942-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:25:18,010-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:25:18,261-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:25:18,271-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:18,275-Started DemoApplication in 0.715 seconds (process running for 449.004)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-06-20 02:25:18,277-Condition evaluation unchanged-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:25:30,804-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:25:30,822-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:30,824-HikariPool-7 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:30,848-HikariPool-7 - Shutdown completed.-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:31,057-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:31,059-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:31,195-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:31,204-Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:25:31,274-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:25:31,276-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:25:31,276-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]-[INFO]- 2024-06-20 02:25:31,287-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:25:31,287-Root WebApplicationContext: initialization completed in 221 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:25:31,314-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:25:31,317-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:25:31,327-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:31,328-HikariPool-8 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:25:31,361-HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19ba9eac-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:31,362-HikariPool-8 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:25:31,405-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:25:31,421-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-06-20 02:25:31,434-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:25:31,434-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:31,434-HikariPool-8 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:31,436-HikariPool-8 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:25:31,437-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-06-20 02:25:31,443-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-06-20 02:25:31,445-Application run failed-
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController' defined in file [/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes/com/example/demo/controller/OrderController.class]: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1319) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.8.jar:6.1.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.0.jar:3.3.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.0.jar:3.3.0]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.0.jar:3.3.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.OrderController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.1.8.jar:6.1.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1313) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.example.demo.controller.OrderController.<init>(OrderController.java:69) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195) ~[spring-beans-6.1.8.jar:6.1.8]
+	... 24 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:37,980-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:37,980-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:38,084-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:38,092-Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:25:38,152-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:25:38,153-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:25:38,153-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:25:38,160-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:25:38,161-Root WebApplicationContext: initialization completed in 179 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:25:38,190-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:25:38,192-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:25:38,197-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:38,198-HikariPool-9 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:25:38,215-HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41321356-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:38,218-HikariPool-9 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:25:38,253-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:25:38,269-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:25:38,322-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:25:38,565-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:25:38,577-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:38,581-Started DemoApplication in 0.637 seconds (process running for 469.31)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-06-20 02:25:38,583-Condition evaluation unchanged-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:25:40,992-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:25:41,016-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:41,022-HikariPool-9 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:41,030-HikariPool-9 - Shutdown completed.-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:41,240-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:41,242-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:41,460-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:25:41,472-Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:25:41,559-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:25:41,560-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:25:41,561-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:25:41,571-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:25:41,571-Root WebApplicationContext: initialization completed in 322 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:25:41,601-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:25:41,605-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:25:41,629-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:41,630-HikariPool-10 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:25:41,691-HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6777279b-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:25:41,691-HikariPool-10 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:25:41,732-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:25:41,747-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:25:41,809-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:25:42,031-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:25:42,040-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:25:42,044-Started DemoApplication in 0.861 seconds (process running for 472.774)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-06-20 02:25:42,045-Condition evaluation unchanged-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:25:49,112-Initializing Spring DispatcherServlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:25:49,124-Initializing Servlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:25:49,134-Completed initialization in 8 ms-
+org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-[WARN]- 2024-06-20 02:25:49,198-Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource hello.]-
+org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-[WARN]- 2024-06-20 02:26:35,928-Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/products.]-
+org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver-[WARN]- 2024-06-20 02:26:41,080-Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/products.]-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:27:11,322-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:27:11,344-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:27:11,348-HikariPool-10 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:27:11,357-HikariPool-10 - Shutdown completed.-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:27:11,577-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:27:11,581-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:27:11,720-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:27:11,729-Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:27:11,808-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:27:11,811-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:27:11,811-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:27:11,821-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:27:11,821-Root WebApplicationContext: initialization completed in 232 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:27:11,846-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:27:11,848-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:27:11,858-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:27:11,858-HikariPool-11 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:27:11,898-HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ef10bca-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:27:11,898-HikariPool-11 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:27:11,937-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:27:11,951-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:27:12,021-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:27:12,227-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:27:12,235-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:27:12,241-Started DemoApplication in 0.724 seconds (process running for 562.973)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-06-20 02:27:12,243-Condition evaluation unchanged-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:27:20,995-Initializing Spring DispatcherServlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:27:20,996-Initializing Servlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:27:21,013-Completed initialization in 17 ms-
+com.example.demo.service.OrderService-[INFO]- 2024-06-20 02:27:21,028-Fetching all orders...-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:28:11,256-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:28:11,271-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:11,274-HikariPool-11 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:11,299-HikariPool-11 - Shutdown completed.-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:28:11,511-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:28:11,514-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:28:11,656-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:28:11,664-Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:28:11,741-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:28:11,743-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:28:11,743-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:28:11,753-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:28:11,754-Root WebApplicationContext: initialization completed in 232 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:28:11,780-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:28:11,782-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:28:11,796-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:11,797-HikariPool-12 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:28:11,843-HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38cd5a9-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:11,843-HikariPool-12 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:28:11,897-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:28:11,914-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:28:11,979-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:28:12,201-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:28:12,210-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:28:12,218-Started DemoApplication in 0.785 seconds (process running for 622.951)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-06-20 02:28:12,219-Condition evaluation unchanged-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:28:41,889-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:28:41,916-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:41,921-HikariPool-12 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:41,928-HikariPool-12 - Shutdown completed.-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:28:42,154-Starting DemoApplication using Java 17.0.11 with PID 20980 (/Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2/target/classes started by luckysiphone in /Users/luckysiphone/Documents/SpringAOP/02_Spring_order_crud_jpa2)-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:28:42,157-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:28:42,356-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-06-20 02:28:42,366-Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:28:42,470-Tomcat initialized with port 9191 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-06-20 02:28:42,472-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-06-20 02:28:42,473-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:28:42,484-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-06-20 02:28:42,484-Root WebApplicationContext: initialization completed in 315 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-06-20 02:28:42,532-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-06-20 02:28:42,538-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-06-20 02:28:42,551-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:42,551-HikariPool-13 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-06-20 02:28:42,598-HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fae5835-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:28:42,599-HikariPool-13 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-06-20 02:28:42,645-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:28:42,660-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-06-20 02:28:42,733-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-06-20 02:28:43,014-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-06-20 02:28:43,028-Tomcat started on port 9191 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-06-20 02:28:43,037-Started DemoApplication in 0.949 seconds (process running for 653.77)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-06-20 02:28:43,038-Condition evaluation unchanged-
+org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]-[INFO]- 2024-06-20 02:29:19,122-Initializing Spring DispatcherServlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:29:19,123-Initializing Servlet 'dispatcherServlet'-
+org.springframework.web.servlet.DispatcherServlet-[INFO]- 2024-06-20 02:29:19,132-Completed initialization in 9 ms-
+com.example.demo.service.OrderService-[INFO]- 2024-06-20 02:29:19,148-Fetching all orders...-
+com.example.demo.service.OrderService-[INFO]- 2024-06-20 02:29:34,577-Fetching all orders...-
+org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener-[INFO]- 2024-06-20 02:30:24,744-Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-06-20 02:30:24,790-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:30:24,805-HikariPool-13 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-06-20 02:30:24,827-HikariPool-13 - Shutdown completed.-
