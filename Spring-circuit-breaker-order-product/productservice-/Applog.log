@@ -1,0 +1,26 @@
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:55:55,815-Starting DemoApplication using Java 17.0.11 with PID 10087 (/Users/luckysiphone/Documents/Microservice/productservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/productservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:55:55,819-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:55:56,041-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:55:56,048-Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 14:55:56,122-Tomcat initialized with port 9196 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:55:56,123-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-07-01 14:55:56,123-Starting Servlet engine: [Apache Tomcat/10.1.24]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-07-01 14:55:56,128-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-07-01 14:55:56,128-Root WebApplicationContext: initialization completed in 305 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-07-01 14:55:56,147-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-07-01 14:55:56,148-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-07-01 14:55:56,153-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:55:56,154-HikariPool-2 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-07-01 14:55:56,171-HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26a56106-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:55:56,171-HikariPool-2 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-07-01 14:55:56,194-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:55:56,232-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-07-01 14:55:56,278-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-07-01 14:55:56,630-LiveReload server is running on port 35729-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 14:55:56,641-Tomcat started on port 9196 (http) with context path '/'-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:55:56,659-Started DemoApplication in 0.886 seconds (process running for 2337.466)-
+org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener-[INFO]- 2024-07-01 14:55:56,662-Condition evaluation unchanged-
+org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin-[INFO]- 2024-07-01 15:04:13,223-Application shutdown requested.-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 15:04:13,340-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 15:04:13,353-HikariPool-2 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 15:04:13,391-HikariPool-2 - Shutdown completed.-

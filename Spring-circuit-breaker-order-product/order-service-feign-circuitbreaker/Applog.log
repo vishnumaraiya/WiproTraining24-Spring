@@ -1,0 +1,796 @@
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:19:45,031-Starting DemoApplication using Java 17.0.11 with PID 10188 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:19:45,034-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:19:45,059-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:19:45,059-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:19:45,545-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:19:45,566-Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.-
+org.springframework.cloud.context.scope.GenericScope-[INFO]- 2024-07-01 14:19:45,691-BeanFactory id=3765ed1c-fde0-3da7-a7d6-b1a82a34039b-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 14:19:46,082-Tomcat initialized with port 9300 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:19:46,088-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-07-01 14:19:46,088-Starting Servlet engine: [Apache Tomcat/10.1.25]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-07-01 14:19:46,114-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-07-01 14:19:46,114-Root WebApplicationContext: initialization completed in 1055 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-07-01 14:19:46,313-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.Version-[INFO]- 2024-07-01 14:19:46,343-HHH000412: Hibernate ORM core version 6.5.2.Final-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-07-01 14:19:46,361-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-07-01 14:19:46,493-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:19:46,507-HikariPool-1 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-07-01 14:19:46,690-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@698c9997-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:19:46,691-HikariPool-1 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-07-01 14:19:47,122-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:19:47,171-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-07-01 14:19:47,383-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[WARN]- 2024-07-01 14:19:47,447-Unable to start LiveReload server-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:19:47,565-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation-
+org.springframework.context.annotation.AnnotationConfigApplicationContext-[WARN]- 2024-07-01 14:19:47,566-Exception thrown from ApplicationListener handling ContextClosedEvent-
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:457)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:19:47,568-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:19:47,571-HikariPool-1 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:19:47,581-HikariPool-1 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:19:47,581-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:19:47,600-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-07-01 14:19:47,609-Application run failed-
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:188)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:124)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1861)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallback instance of type class com.example.demo.cts.OrderFeignClientFallback found for feign client productservice
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.getFromContext(FeignCircuitBreakerTargeter.java:81)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.targetWithFallback(FeignCircuitBreakerTargeter.java:72)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.target(FeignCircuitBreakerTargeter.java:54)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:500)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:452)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:182)
+	... 34 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:32:39,394-Starting DemoApplication using Java 17.0.11 with PID 10592 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:32:39,395-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:32:39,430-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:32:39,430-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:32:40,286-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:32:40,314-Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.-
+org.springframework.cloud.context.scope.GenericScope-[INFO]- 2024-07-01 14:32:40,452-BeanFactory id=3765ed1c-fde0-3da7-a7d6-b1a82a34039b-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 14:32:40,925-Tomcat initialized with port 9300 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:32:40,931-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-07-01 14:32:40,931-Starting Servlet engine: [Apache Tomcat/10.1.25]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-07-01 14:32:40,955-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-07-01 14:32:40,955-Root WebApplicationContext: initialization completed in 1525 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-07-01 14:32:41,168-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.Version-[INFO]- 2024-07-01 14:32:41,202-HHH000412: Hibernate ORM core version 6.5.2.Final-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-07-01 14:32:41,220-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-07-01 14:32:41,353-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:32:41,369-HikariPool-1 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-07-01 14:32:41,623-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ce7d89b-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:32:41,624-HikariPool-1 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-07-01 14:32:42,173-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:32:42,235-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-07-01 14:32:42,491-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[WARN]- 2024-07-01 14:32:42,561-Unable to start LiveReload server-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:32:42,689-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation-
+org.springframework.context.annotation.AnnotationConfigApplicationContext-[WARN]- 2024-07-01 14:32:42,690-Exception thrown from ApplicationListener handling ContextClosedEvent-
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:457)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:32:42,693-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:32:42,695-HikariPool-1 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:32:42,698-HikariPool-1 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:32:42,699-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:32:42,712-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-07-01 14:32:42,722-Application run failed-
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:188)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:124)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1861)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallback instance of type class com.example.demo.cts.OrderFeignClientFallback found for feign client productservice
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.getFromContext(FeignCircuitBreakerTargeter.java:81)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.targetWithFallback(FeignCircuitBreakerTargeter.java:72)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.target(FeignCircuitBreakerTargeter.java:54)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:500)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:452)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:182)
+	... 34 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:37:34,216-Starting DemoApplication using Java 17.0.11 with PID 10755 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:37:34,218-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:37:34,237-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:37:34,237-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:37:34,633-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'bulkheadEndpoint' defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=io.github.resilience4j.springboot3.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration; factoryMethodName=bulkheadEndpoint; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]] for bean 'bulkheadEndpoint' since there is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=io.github.resilience4j.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration; factoryMethodName=bulkheadEndpoint; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [io/github/resilience4j/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]] bound.-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:37:34,642-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter-[ERROR]- 2024-07-01 14:37:34,655-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'bulkheadEndpoint', defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [io/github/resilience4j/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:41:36,986-Starting DemoApplication using Java 17.0.11 with PID 10901 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:41:36,988-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:41:37,027-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:41:37,027-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:41:37,644-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:41:37,671-Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.-
+org.springframework.cloud.context.scope.GenericScope-[INFO]- 2024-07-01 14:41:37,810-BeanFactory id=3765ed1c-fde0-3da7-a7d6-b1a82a34039b-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 14:41:38,213-Tomcat initialized with port 9300 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:41:38,219-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-07-01 14:41:38,219-Starting Servlet engine: [Apache Tomcat/10.1.25]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-07-01 14:41:38,244-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-07-01 14:41:38,244-Root WebApplicationContext: initialization completed in 1217 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-07-01 14:41:38,448-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.Version-[INFO]- 2024-07-01 14:41:38,480-HHH000412: Hibernate ORM core version 6.5.2.Final-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-07-01 14:41:38,501-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-07-01 14:41:38,636-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:41:38,649-HikariPool-1 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-07-01 14:41:38,824-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66bd4f68-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:41:38,825-HikariPool-1 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-07-01 14:41:39,263-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:41:39,316-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-07-01 14:41:39,529-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[WARN]- 2024-07-01 14:41:39,593-Unable to start LiveReload server-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:41:39,637-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation-
+org.springframework.context.annotation.AnnotationConfigApplicationContext-[WARN]- 2024-07-01 14:41:39,638-Exception thrown from ApplicationListener handling ContextClosedEvent-
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:457)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:41:39,640-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:41:39,642-HikariPool-1 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:41:39,647-HikariPool-1 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:41:39,648-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:41:39,661-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-07-01 14:41:39,672-Application run failed-
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:188)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:124)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1861)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'circuitBreakerFeignTargeter' defined in class path resource [org/springframework/cloud/openfeign/FeignAutoConfiguration$CircuitBreakerPresentFeignTargeterConfiguration.class]: Unsatisfied dependency expressed through method 'circuitBreakerFeignTargeter' parameter 0: Error creating bean with name 'resilience4jCircuitBreakerFactory' defined in class path resource [org/springframework/cloud/circuitbreaker/resilience4j/Resilience4JAutoConfiguration.class]: Unsatisfied dependency expressed through method 'resilience4jCircuitBreakerFactory' parameter 0: Error creating bean with name 'circuitBreakerRegistry' defined in class path resource [io/github/resilience4j/springboot3/circuitbreaker/autoconfigure/CircuitBreakerConfigurationOnMissingBean.class]: Failed to instantiate [io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry]: Factory method 'circuitBreakerRegistry' threw exception with message: io/github/resilience4j/core/functions/Either
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:492)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1252)
+	at org.springframework.cloud.context.named.NamedContextFactory.getInstance(NamedContextFactory.java:200)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.get(FeignClientFactoryBean.java:394)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:499)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:452)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:182)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'resilience4jCircuitBreakerFactory' defined in class path resource [org/springframework/cloud/circuitbreaker/resilience4j/Resilience4JAutoConfiguration.class]: Unsatisfied dependency expressed through method 'resilience4jCircuitBreakerFactory' parameter 0: Error creating bean with name 'circuitBreakerRegistry' defined in class path resource [io/github/resilience4j/springboot3/circuitbreaker/autoconfigure/CircuitBreakerConfigurationOnMissingBean.class]: Failed to instantiate [io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry]: Factory method 'circuitBreakerRegistry' threw exception with message: io/github/resilience4j/core/functions/Either
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 55 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'circuitBreakerRegistry' defined in class path resource [io/github/resilience4j/springboot3/circuitbreaker/autoconfigure/CircuitBreakerConfigurationOnMissingBean.class]: Failed to instantiate [io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry]: Factory method 'circuitBreakerRegistry' threw exception with message: io/github/resilience4j/core/functions/Either
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 69 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry]: Factory method 'circuitBreakerRegistry' threw exception with message: io/github/resilience4j/core/functions/Either
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 83 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: io/github/resilience4j/core/functions/Either
+	at io.github.resilience4j.circuitbreaker.CircuitBreakerConfig.<clinit>(CircuitBreakerConfig.java:57)
+	at io.github.resilience4j.circuitbreaker.internal.InMemoryCircuitBreakerRegistry.<init>(InMemoryCircuitBreakerRegistry.java:68)
+	at io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry.of(CircuitBreakerRegistry.java:128)
+	at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerConfiguration.createCircuitBreakerRegistry(CircuitBreakerConfiguration.java:146)
+	at io.github.resilience4j.spring6.circuitbreaker.configure.CircuitBreakerConfiguration.circuitBreakerRegistry(CircuitBreakerConfiguration.java:74)
+	at io.github.resilience4j.springboot3.circuitbreaker.autoconfigure.AbstractCircuitBreakerConfigurationOnMissingBean.circuitBreakerRegistry(AbstractCircuitBreakerConfigurationOnMissingBean.java:70)
+	at io.github.resilience4j.springboot3.circuitbreaker.autoconfigure.CircuitBreakerConfigurationOnMissingBean$$SpringCGLIB$$0.CGLIB$circuitBreakerRegistry$1(<generated>)
+	at io.github.resilience4j.springboot3.circuitbreaker.autoconfigure.CircuitBreakerConfigurationOnMissingBean$$SpringCGLIB$$FastClass$$0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348)
+	at io.github.resilience4j.springboot3.circuitbreaker.autoconfigure.CircuitBreakerConfigurationOnMissingBean$$SpringCGLIB$$0.circuitBreakerRegistry(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 84 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.github.resilience4j.core.functions.Either
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 100 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:42:14,279-Starting DemoApplication using Java 17.0.11 with PID 10913 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:42:14,280-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:42:14,308-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:42:14,309-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:42:14,723-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'bulkheadEndpoint' defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=io.github.resilience4j.springboot3.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration; factoryMethodName=bulkheadEndpoint; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]] for bean 'bulkheadEndpoint' since there is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=io.github.resilience4j.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration; factoryMethodName=bulkheadEndpoint; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [io/github/resilience4j/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]] bound.-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:42:14,732-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter-[ERROR]- 2024-07-01 14:42:14,742-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'bulkheadEndpoint', defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [io/github/resilience4j/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:49:55,355-Starting DemoApplication using Java 17.0.11 with PID 11179 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:49:55,356-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:49:55,381-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:49:55,381-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:49:55,802-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'bulkheadEndpoint' defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=io.github.resilience4j.springboot3.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration; factoryMethodName=bulkheadEndpoint; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]] for bean 'bulkheadEndpoint' since there is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=io.github.resilience4j.bulkhead.autoconfigure.BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration; factoryMethodName=bulkheadEndpoint; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [io/github/resilience4j/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class]] bound.-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:49:55,814-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter-[ERROR]- 2024-07-01 14:49:55,824-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'bulkheadEndpoint', defined in class path resource [io/github/resilience4j/springboot3/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [io/github/resilience4j/bulkhead/autoconfigure/BulkheadAutoConfiguration$BulkheadEndpointAutoConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:54:07,279-Starting DemoApplication using Java 17.0.11 with PID 11278 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:54:07,280-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:54:07,301-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:54:07,301-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:54:07,829-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:54:07,851-Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.-
+org.springframework.cloud.context.scope.GenericScope-[INFO]- 2024-07-01 14:54:08,001-BeanFactory id=c5deaa80-19c9-32b1-9d4b-1439dc7b9130-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 14:54:08,402-Tomcat initialized with port 9300 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:54:08,408-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-07-01 14:54:08,408-Starting Servlet engine: [Apache Tomcat/10.1.25]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-07-01 14:54:08,430-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-07-01 14:54:08,430-Root WebApplicationContext: initialization completed in 1129 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-07-01 14:54:08,634-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.Version-[INFO]- 2024-07-01 14:54:08,664-HHH000412: Hibernate ORM core version 6.5.2.Final-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-07-01 14:54:08,681-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-07-01 14:54:08,817-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:54:08,833-HikariPool-1 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-07-01 14:54:09,032-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2de9233e-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:54:09,033-HikariPool-1 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-07-01 14:54:09,471-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:54:09,533-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-07-01 14:54:09,753-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[WARN]- 2024-07-01 14:54:09,821-Unable to start LiveReload server-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:54:09,914-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation-
+org.springframework.context.annotation.AnnotationConfigApplicationContext-[WARN]- 2024-07-01 14:54:09,915-Exception thrown from ApplicationListener handling ContextClosedEvent-
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:457)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:54:09,917-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:54:09,919-HikariPool-1 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:54:09,922-HikariPool-1 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:54:09,922-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:54:09,936-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter-[ERROR]- 2024-07-01 14:54:09,945-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method threadPoolBulkheadRegistry in io.github.resilience4j.bulkhead.autoconfigure.AbstractBulkheadConfigurationOnMissingBean required a single bean, but 2 were found:
+	- resilience4j.thread-pool-bulkhead-io.github.resilience4j.bulkhead.autoconfigure.ThreadPoolBulkheadProperties: defined in unknown location
+	- resilience4j.thread-pool-bulkhead-io.github.resilience4j.springboot3.bulkhead.autoconfigure.ThreadPoolBulkheadProperties: defined in unknown location
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:58:37,409-Starting DemoApplication using Java 17.0.11 with PID 11380 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 14:58:37,410-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:58:37,429-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 14:58:37,430-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:58:37,921-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 14:58:37,943-Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.-
+org.springframework.cloud.context.scope.GenericScope-[INFO]- 2024-07-01 14:58:38,066-BeanFactory id=ba26808b-3595-307f-a292-d332ed9e2524-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 14:58:38,450-Tomcat initialized with port 9300 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:58:38,456-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-07-01 14:58:38,457-Starting Servlet engine: [Apache Tomcat/10.1.25]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-07-01 14:58:38,482-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-07-01 14:58:38,482-Root WebApplicationContext: initialization completed in 1052 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-07-01 14:58:38,683-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.Version-[INFO]- 2024-07-01 14:58:38,714-HHH000412: Hibernate ORM core version 6.5.2.Final-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-07-01 14:58:38,734-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-07-01 14:58:38,879-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:58:38,893-HikariPool-1 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-07-01 14:58:39,073-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f1cc8c0-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:58:39,074-HikariPool-1 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-07-01 14:58:39,501-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:58:39,550-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-07-01 14:58:39,769-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[WARN]- 2024-07-01 14:58:39,830-Unable to start LiveReload server-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 14:58:39,919-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation-
+org.springframework.context.annotation.AnnotationConfigApplicationContext-[WARN]- 2024-07-01 14:58:39,920-Exception thrown from ApplicationListener handling ContextClosedEvent-
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:457)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 14:58:39,922-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:58:39,924-HikariPool-1 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 14:58:39,927-HikariPool-1 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 14:58:39,928-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 14:58:39,941-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-07-01 14:58:39,950-Application run failed-
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:188)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:124)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1861)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallback instance of type class com.example.demo.cts.OrderFeignClientFallback found for feign client productservice
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.getFromContext(FeignCircuitBreakerTargeter.java:81)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.targetWithFallback(FeignCircuitBreakerTargeter.java:72)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.target(FeignCircuitBreakerTargeter.java:54)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:500)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:452)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:182)
+	... 34 common frames omitted
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 15:11:12,509-Starting DemoApplication using Java 17.0.11 with PID 11891 (/Users/luckysiphone/Documents/Microservice/orderservice-aws-feign/target/classes started by luckysiphone in /Users/luckysiphone/Documents/Microservice/orderservice-aws-feign)-
+com.example.demo.DemoApplication-[INFO]- 2024-07-01 15:11:12,511-No active profile set, falling back to 1 default profile: "default"-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 15:11:12,529-Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable-
+org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor-[INFO]- 2024-07-01 15:11:12,529-For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 15:11:13,040-Bootstrapping Spring Data JPA repositories in DEFAULT mode.-
+org.springframework.data.repository.config.RepositoryConfigurationDelegate-[INFO]- 2024-07-01 15:11:13,063-Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.-
+org.springframework.cloud.context.scope.GenericScope-[INFO]- 2024-07-01 15:11:13,185-BeanFactory id=ba26808b-3595-307f-a292-d332ed9e2524-
+org.springframework.boot.web.embedded.tomcat.TomcatWebServer-[INFO]- 2024-07-01 15:11:13,568-Tomcat initialized with port 9300 (http)-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 15:11:13,574-Starting service [Tomcat]-
+org.apache.catalina.core.StandardEngine-[INFO]- 2024-07-01 15:11:13,575-Starting Servlet engine: [Apache Tomcat/10.1.25]-
+org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]-[INFO]- 2024-07-01 15:11:13,597-Initializing Spring embedded WebApplicationContext-
+org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext-[INFO]- 2024-07-01 15:11:13,597-Root WebApplicationContext: initialization completed in 1067 ms-
+org.hibernate.jpa.internal.util.LogHelper-[INFO]- 2024-07-01 15:11:13,806-HHH000204: Processing PersistenceUnitInfo [name: default]-
+org.hibernate.Version-[INFO]- 2024-07-01 15:11:13,838-HHH000412: Hibernate ORM core version 6.5.2.Final-
+org.hibernate.cache.internal.RegionFactoryInitiator-[INFO]- 2024-07-01 15:11:13,858-HHH000026: Second-level cache disabled-
+org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo-[INFO]- 2024-07-01 15:11:13,995-No LoadTimeWeaver setup: ignoring JPA class transformer-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 15:11:14,010-HikariPool-1 - Starting...-
+com.zaxxer.hikari.pool.HikariPool-[INFO]- 2024-07-01 15:11:14,199-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@854c801-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 15:11:14,200-HikariPool-1 - Start completed.-
+org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator-[INFO]- 2024-07-01 15:11:14,634-HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)-
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 15:11:14,689-Initialized JPA EntityManagerFactory for persistence unit 'default'-
+org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration-[WARN]- 2024-07-01 15:11:14,899-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning-
+org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer-[INFO]- 2024-07-01 15:11:14,965-LiveReload server is running on port 35729-
+org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext-[WARN]- 2024-07-01 15:11:15,044-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation-
+org.springframework.context.annotation.AnnotationConfigApplicationContext-[WARN]- 2024-07-01 15:11:15,045-Exception thrown from ApplicationListener handling ContextClosedEvent-
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:457)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:384)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1093)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:114)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1195)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1186)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:637)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean-[INFO]- 2024-07-01 15:11:15,047-Closing JPA EntityManagerFactory for persistence unit 'default'-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 15:11:15,049-HikariPool-1 - Shutdown initiated...-
+com.zaxxer.hikari.HikariDataSource-[INFO]- 2024-07-01 15:11:15,053-HikariPool-1 - Shutdown completed.-
+org.apache.catalina.core.StandardService-[INFO]- 2024-07-01 15:11:15,054-Stopping service [Tomcat]-
+org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger-[INFO]- 2024-07-01 15:11:15,067-
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.-
+org.springframework.boot.SpringApplication-[ERROR]- 2024-07-01 15:11:15,076-Application run failed-
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'oFeignClient': Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.example.demo.cts.OrderFeignClient': FactoryBean threw exception on object creation
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:188)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:124)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1861)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:347)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: No fallback instance of type class com.example.demo.cts.OrderFeignClientFallback found for feign client productservice
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.getFromContext(FeignCircuitBreakerTargeter.java:81)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.targetWithFallback(FeignCircuitBreakerTargeter.java:72)
+	at org.springframework.cloud.openfeign.FeignCircuitBreakerTargeter.target(FeignCircuitBreakerTargeter.java:54)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getTarget(FeignClientFactoryBean.java:500)
+	at org.springframework.cloud.openfeign.FeignClientFactoryBean.getObject(FeignClientFactoryBean.java:452)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:182)
+	... 34 common frames omitted
